@@ -1,0 +1,164 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    --header-color: #fff;
+    --header-mobile-color: #394048;
+    --li-color: #69727c;
+    --li-mob-color: #ebedf2;
+    --bg-color: #0c6db3;
+    --secondary-title-color: #2f353b;
+    --paragraph-color: #93989c;
+    --top-line-color: #32c5d2;
+    --fotter-text-color: #818e9a;
+}
+
+body {
+    background-image: url(/assets/img/bg-22.jpg);
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: var(--header-color);
+}
+
+#navbar a {
+    font-weight: bold;
+    color: var(--li-color);
+}
+
+#navbar-items {
+    margin-top: 0.2em;
+}
+
+#navbar-items a:hover {
+    color: var(--bg-color);
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img {
+    width: 220px;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+.navbar-toggler {
+    font-size: 2em;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+#navbar-items .nav-item {
+    margin: 0 1em;
+}
+
+@media(max-width: 991px) {
+    #navbar {
+        background-color: var(--header-mobile-color);
+    }
+    
+    #navbar button {
+        color: #ffffff;
+    }
+
+    #navbar a {
+        color: var(--li-mob-color);
+    }
+
+    #navbar-items a {
+        border-bottom: 1px solid #404851;
+    }
+    .nc-desktop-logo {
+        display: none;
+    }
+}
+
+@media(min-width: 992px) {
+    .nc-mobile-logo {
+        display: none;
+    }
+}
+
+
+/* SLIDER */
+#slider {
+    margin-top: 6.67em;
+}
+
+#slider .carousel-indicators button {
+    width: 15px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: var(--li-mob-color);
+}
+
+#slider .carousel-indicators button:active {
+    color: var(--secondary-title-color);
+}
+
+#slider .carousel-caption {
+    bottom: 3em;
+}
+
+#slider .carousel-caption h5 {
+    font-size: 2.5em;
+    text-shadow: #000 2px 2px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#slider .btn {
+    padding: 0.3 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #111;
+    font-size: 3em;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #222;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+@media(min-width: 768px) {
+    #slider .carousel-caption {
+        bottom: 15em;
+    }
+    
+    #slider .carousel-caption h5 {
+        font-size: 4em;
+        text-shadow: #000 2px 3px;
+    }
+
+    #slider .btn {
+        padding: 0.6 1.6em;
+        font-size: 1.2em;
+    }
+
+    .carousel-indicators {
+        bottom: 7em;
+    }
+}
